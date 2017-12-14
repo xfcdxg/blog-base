@@ -3,14 +3,15 @@
     <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
         <i class="icon icon-lg icon-close"></i>
     </a>
-    <div class="brand-wrap" style="background-image:url(<%- url_for(theme.brand) %>)">
-      <div class="brand">
+    <div class="brand-wrap" style="background-image:url(<%- url_for(theme.brand) %>); background-size: 120% 100%">
+      <div class="brand" style='padding: 30px 20px 60px 2em; background-color: rgba(4, 113, 173, 0.1)'>
         <a href="<%- url_for(theme.avatar_link) %>" class="avatar waves-effect waves-circle waves-light">
           <img src="<%- url_for(theme.avatar) %>">
         </a>
         <hgroup class="introduce">
-          <h5 class="nickname"><%- config.author %></h5>
-          <%- mail_to(theme.email, theme.email, {class: 'mail'}) %>
+          <h5 class="nickname" style='margin-bottom: .3rem'><%- config.author %></h5>
+          <span><%- theme.email %></span>
+          <!-- <%- mail_to(theme.email, theme.email, {class: 'mail'}) %> -->
         </hgroup>
         <% if (theme.menu_link) { %>
         <ul class="menu-link">
