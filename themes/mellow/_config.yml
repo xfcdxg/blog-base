@@ -142,10 +142,10 @@ postMessage: 转载注明出处，原文地址：<a href="<%- url_for(page.path)
 # 打赏
 ## 可以在文章markdown中设置reward: false来取消本篇文章的打赏功能
 ## 全局取消直接注释下方配置
-reward:
-  title: 我们一起来让这个世界有趣一点
-  wechat: /img/reward-wechat.jpg     #微信
-  alipay: /img/reward-alipay.jpg     #支付宝
+reward: false
+  # title: 我们一起来让这个世界有趣一点
+  # wechat: /img/reward-wechat.jpg     #微信
+  # alipay: /img/reward-alipay.jpg     #支付宝
 
 # 分享
 ## 内置6种分享途径，不需要的设置对应的为false

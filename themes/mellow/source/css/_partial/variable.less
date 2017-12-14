@@ -1,6 +1,6 @@
 // font
 @font-bluehost: "fonts/bluehost";
-@font: Bluehost, "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+@font: -apple-system, PingFang SC, Bluehost, "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
 @font-code: Consolas, Monaco, courier, monospace;
 @font-en: "MV Boli", Bluehost, serif;
 // font-size
@@ -13,15 +13,16 @@
 @textPrimaryColorWhite: #fff;
 @textPrimaryColorBlack: #000;
 @textSecondaryColor: lighten(@textPrimaryColorBlack, 40%);
+@textLightGrayColor: lighten(@textPrimaryColorBlack, 80%);
 
-@linkHoverColor: lighten(@primaryColor_2, 20%);
+@linkHoverColor: lighten(@primaryColor_2, 10%);
 @copyrightColor: lighten(@primaryColor_1, 70%);
 @dividerColor: lighten(@textPrimaryColorBlack, 60%);
 @borderColor: lighten(@textPrimaryColorBlack, 70%);
 @backColor: lighten(@textPrimaryColorBlack, 95%);
 @alipayColor: #1e88e5;
 @weChatColor: #4caf50;
-@rewardColor: #d50000;
+@rewardColor: @primaryColor_1;
 @githubCardColor: #b2dfdb;
 // tags color
 @tag-color-1: #4dd0e1;

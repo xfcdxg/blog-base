@@ -24,31 +24,31 @@
     }
 
     .search-title{
-        line-height: 2.5em;
-        border-radius: 0 0 4px 4px;
+        line-height: 3em;
+        // border-radius: 0 0 4px 4px;
         .boxShadow(@s:.4s);
         background: @textPrimaryColorWhite;
         position: relative;
         z-index: 1;
-        
+
         span{
             text-align: center;
             width: 2.5em;
-            height: 2.5em;
-            line-height: 2.5em;
+            height: 3rem;
+            line-height: 3rem;
             border-radius: 50%;
-            color: @primaryColor_2;
+            color: lighten(@primaryColor_2, 5%);
             background: none;
         }
         .close{
-            color: @primaryColor_2;
+            color: lighten(@primaryColor_2, 5%);
         }
         input{
             width: calc( ~"100% - 5em" );
-            line-height: 2.5em;
+            line-height: 3rem;
             border: none;
             text-indent: 4px;
-            color: @textPrimaryColorBlack;
+            color: @textSecondaryColor;
         }
     }
 
@@ -65,16 +65,20 @@
             position: absolute;
             left: 50%;
             top: 50%;
-            color: @textSecondaryColor;
+            color: @textLightGrayColor;
         }
 
     }
 
     .search-result-list{
+        margin: 24px 0;
         a:hover{
             text-decoration: none;
         }
 
+        li {
+          list-style: none;
+        }
         .search-result-title{
             font-size: @font-size + 2;
             color: @primaryColor_1;
@@ -98,7 +102,7 @@
             &:hover{
                 color: @textPrimaryColorBlack;
             }
-            
+
             .search-keyword{
                 border-bottom: 1px dashed @primaryColor_2;
                 font-weight: bold;
@@ -108,12 +112,12 @@
         }
     }
 
-    
+
 }
 
 
 &::-webkit-input-placeholder {
-    color: @lightPrimaryColor
+    color: @textLightGrayColor
 }
 
 @media screen and (max-width:760px) {
@@ -126,5 +130,5 @@
         right: 0;
         top: 0;
     }
-    
+
 }
