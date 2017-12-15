@@ -14,6 +14,8 @@
 @textPrimaryColorBlack: #000;
 @textSecondaryColor: lighten(@textPrimaryColorBlack, 40%);
 @textLightGrayColor: lighten(@textPrimaryColorBlack, 80%);
+@textLightGray2Color: #f5f5f6;
+@textLightGray3Color: lighten(@textPrimaryColorBlack, 70%);
 
 @linkHoverColor: lighten(@primaryColor_2, 10%);
 @copyrightColor: lighten(@primaryColor_1, 70%);
@@ -194,8 +196,8 @@
 
 .card(@radius: 3px) {
     background: #fff;
-    border-radius: @radius;
-    box-shadow: 0 1px 3px rgba(151, 151, 151, .58);
+    // border-radius: @radius;
+    box-shadow: 3px 3px 10px 0px rgba(151,151,151,0.38);
     .center{
         text-align: center;
     }

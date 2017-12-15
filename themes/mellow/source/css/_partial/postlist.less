@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0 -12px;
     list-style: none;
+    .post-meta {
+      text-align: left;
+    }
 }
 
 .post-list-item {
@@ -12,7 +15,7 @@
 
 .post-title {
     margin: 0 0 16px;
-    text-align: center;
+    // text-align: center;
 }
 
 
@@ -30,7 +33,7 @@
     line-height: 14px;
     font-size: @font-size - 2;
     font-weight: bold;
-    color: @textLightGrayColor;
+    color: @textLightGray3Color;
     overflow: hidden;
     >*:not(:first-child) {
         &:before {
@@ -112,10 +115,11 @@
 }
 
 .post-more {
-    width: 50px;
-    margin: 10px auto 0;
-    display: block;
-    padding: 0 6px;
+    display: none;
+    width: 70px;
+    margin: 15px auto 0;
+    // display: block;
+    padding: 3px 6px;
     font-weight: 500;
     color: @primaryColor_2 @imp;
     border: 1px solid @primaryColor_2 @imp;

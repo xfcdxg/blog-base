@@ -1,11 +1,11 @@
 <% if (theme.show_last_updated || theme.postMessage) { %>
 <blockquote class="post-copyright">
     <div class="content">
-        <%- partial('updated') %>
         <% if(theme.postMessage) {%>
         <%- _.template(theme.postMessage)(locals) %>
         <% } %>
     </div>
+    <div style='float:left; color: #ccc; font-size: 12px; line-height: 28px'><%- partial('updated') %></div>
     <footer>
         <a href="<%- config.url %>">
             <img src="<%- url_for(theme.avatar) %>" alt="<%- config.author %>">

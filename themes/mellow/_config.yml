@@ -137,7 +137,7 @@ show_last_updated: true
 # 版权信息copyright
 ## 位于文章底部
 ## hexo中所有变量及辅助函数等均可调用，具体请查阅 hexo.io
-postMessage: 转载注明出处，原文地址：<a href="<%- url_for(page.path).replace(/index\.html$/, "") %>" target="_blank" rel="external"><%- page.permalink.replace(/index\.html$/, "") %></a>
+postMessage: 转载请注明出处，原文地址 👉 <a href="<%- url_for(page.path).replace(/index\.html$/, "") %>" target="_blank" rel="external"><%- page.permalink.replace(/index\.html$/, "") %></a>
 
 # 打赏
 ## 可以在文章markdown中设置reward: false来取消本篇文章的打赏功能
@@ -164,7 +164,7 @@ share_items:
 ## 位于文章右侧，移动端或者小屏幕自动隐藏
 toc:
   enable: true
-  list_number: true  # 是否显示数字排序
+  list_number: false  # 是否显示数字排序
 
 ##############################################################################################################################
 

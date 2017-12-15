@@ -15,7 +15,10 @@
 
     .post-content {
         word-break: break-word;
-
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow-x: hidden;
+        color: lighten(@textSecondaryColor, 20%);
         .highlight,
         > pre {
             margin-left: -20px;
