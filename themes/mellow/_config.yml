@@ -63,19 +63,23 @@ menu_link:
 ##    target: _blank    [必要][不渲染] 是否跳出，省略则在当前页面打开
 menu:
   home:
-    text: HOME
+    text: 首页
     url: /
     icon: home
-  th-list:
-    text: CATEGORIES
-    url: /categories
-    icon: th-list
+  # record:
+  #   text: 收录
+  #   url: /records
+  #   icon: bookmark
   tags:
-    text: TAGS
+    text: 标签
     url: /tags
     icon: tags
+  th-list:
+    text: 分类
+    url: /categories
+    icon: th-list
   archives:
-    text: ARCHIVES
+    text: 历程
     url: /archives
     icon: archives
   #about:
@@ -118,9 +122,10 @@ top_icon: true
 # 页面标题
 ## 标签页 / 分类页 / 归档页的标题只能在这里设置
 ## 其他自定义页面标题在页面markdown文件的title中设置
-tags_title: Tags              #标签页
-categories_title: Categories  #分类页
-archives_title: Archives      #归档页
+tags_title: 标签              #标签页
+categories_title: 分类  #分类页
+archives_title: 历程      #归档页
+# records_title;: 收录
 
 # 自动生成文章摘要
 ## 显示在主页中
